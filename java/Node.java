@@ -1,4 +1,4 @@
-public class Node{
+public class Node implements Comparable<Node>{
     private String name;
     private int weight;
     public Node(String name, int weight){
@@ -22,5 +22,16 @@ public class Node{
         this.weight = weight;
     }
 
+    @Override
+    public String toString() {
+        return name;
+    }
 
+    @Override
+    public int compareTo(Node o) {
+        if(this.name.equals(o.getName()))
+            return this.weight - o.getWeight();
+        return this.name.compareTo(o.getName());
+
+    }
 }
