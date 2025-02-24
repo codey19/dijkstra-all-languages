@@ -1,6 +1,11 @@
 # dijkstra-all-languages
-A collection of Dijkstra's algorithm implementations in every programming language I know. Current list: Java, C
-Basic Structure:
+A collection of Dijkstra's algorithm implementations in every programming language I know.
+
+Current Language List: 
+- Java
+- C
+
+Basic General Structure:
 - Node Class:
    - "ID" String/Char Array
    - "Weight" Integer
